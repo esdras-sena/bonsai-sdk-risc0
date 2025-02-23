@@ -1,0 +1,42 @@
+{
+  "name": "bonsai-sdk",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "version": "1.0.0",
+  "main": "dist/bonsai-sdk.cjs.js",
+  "module": "dist/bonsai-sdk.esm.js",
+  "exports": {
+    "import": "./dist/bonsai-sdk.esm.js",
+    "require": "./dist/bonsai-sdk.cjs.js"
+  },
+  "files": [
+    "bincode2proof_bg.wasm",
+    "bincode2proof.js",
+    "bincode2proof.d.ts"
+  ],
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.2",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "@rollup/plugin-typescript": "^12.1.2",
+    "@types/dotenv": "^8.2.3",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.13.4",
+    "jest": "^29.7.0",
+    "rollup": "^4.34.8",
+    "ts-jest": "^29.2.5",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "bincode-ts": "^0.1.1",
+    "dotenv": "^16.4.7",
+    "ethers": "^6.13.5"
+  }
+}

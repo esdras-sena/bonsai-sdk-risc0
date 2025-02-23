@@ -1,0 +1,17 @@
+[package]
+name = "bincode2proof"
+version.workspace = true
+edition.workspace = true
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+wasm-bindgen = "0.2"
+bincode = "1.3.3"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0.139"
+borsh = { version = "1.5", default-features = false, features = ["derive"] }
+bytemuck = { version = "1.13", features = ["extern_crate_alloc", "derive"] }
+derive_more = { version = "2.0.1", features = ["full"] }
+anyhow = "1.0.96"
