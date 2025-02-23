@@ -11,11 +11,7 @@
     "import": "./dist/bonsai-sdk.esm.js",
     "require": "./dist/bonsai-sdk.cjs.js"
   },
-  "files": [
-    "bincode2proof_bg.wasm",
-    "bincode2proof.js",
-    "bincode2proof.d.ts"
-  ],
+  
   "type": "module",
   "scripts": {
     "build": "rollup -c"
