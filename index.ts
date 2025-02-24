@@ -447,16 +447,8 @@ export class Client {
 }
 
 export async function getSealAndJournal(binArray: Uint8Array): Promise<Uint8Array[]> {
-
-    // init().then(()=>{
-    //     let proofData = convert(binArray)
-    //     console.log("proof data ",proofData)
-    //     return [proofData.seal, proofData.journal]
-    // })
-    console.log("get seal")
     await init()
     let proofData = convert(binArray)
-    console.log("proof data ", proofData)
     return [proofData.seal, proofData.journal]
 }
 
