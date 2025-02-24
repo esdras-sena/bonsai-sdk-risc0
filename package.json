@@ -4,7 +4,7 @@
     "type": "git",
     "url": "https://github.com/esdras-sena/bonsai-sdk-risc0"
   },
-  "version": "1.0.1",
+  "version": "1.0.3",
   "main": "dist/bonsai-sdk.cjs.js",
   "module": "dist/bonsai-sdk.esm.js",
   "exports": {

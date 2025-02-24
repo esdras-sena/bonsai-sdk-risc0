@@ -1,6 +1,5 @@
 import axios, { AxiosInstance } from 'axios';
-import * as dotenv from 'dotenv';
-dotenv.config();
+
 import init, { convert } from './bincode2proof'
 
 /// HTTP header key for the API key

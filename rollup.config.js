@@ -18,6 +18,7 @@ export default {
             maxFileSize: 10000000, // inline all wasm files up to 10MB
         })
     ],
+    external: [ 'path', 'fs', 'os', 'builtin-modules', 'resolve', 'browser-resolve', 'is-module', 'rollup-pluginutils' ],
     output: [
         {
             file: 'dist/bonsai-sdk.esm.js',
