@@ -18,7 +18,7 @@ Before you start, you have first set up your env variables. Bonsai needs to env 
 [FRAMEWORK_PREFIX]BONSAI_API_KEY=<YOUR API KEY>
 [FRAMEWORK_PREFIX]BONSAI_API_URL=<BONSAI API URL>
 ```
-This npm package is made to adapt for all Javascript/Typescript frameworks prefix, for example the Next framework have the prefix ==NEXT_PUBLIC_== so the env variables in Next should be set like:
+This npm package is made to adapt for all Javascript/Typescript frameworks prefix, for example the Next framework have the prefix `NEXT_PUBLIC_` so the env variables in Next should be set like:
 ```console
 NEXT_PUBLIC_BONSAI_API_KEY=<YOUR API KEY>
 NEXT_PUBLIC_BONSAI_API_URL=<BONSAI API URL>
