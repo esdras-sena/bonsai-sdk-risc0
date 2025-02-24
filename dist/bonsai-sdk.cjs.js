@@ -21024,15 +21024,8 @@ class Client {
 }
 function getSealAndJournal(binArray) {
     return __awaiter(this, void 0, void 0, function* () {
-        // init().then(()=>{
-        //     let proofData = convert(binArray)
-        //     console.log("proof data ",proofData)
-        //     return [proofData.seal, proofData.journal]
-        // })
-        console.log("get seal");
         yield __wbg_init();
         let proofData = convert(binArray);
-        console.log("proof data ", proofData);
         return [proofData.seal, proofData.journal];
     });
 }

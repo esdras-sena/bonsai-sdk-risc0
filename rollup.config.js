@@ -8,7 +8,10 @@ export default {
     input: 'index.ts', // your entry point
     plugins: [
         json(),
-        resolve(),     // resolves node_modules imports
+        resolve({
+            browser: true, // ensures that browser fields are used
+            extensions: ['.js', '.ts']
+          }),     // resolves node_modules imports
         commonjs(),    // converts CommonJS modules to ES6, if needed
         typescript(),
         wasm({
